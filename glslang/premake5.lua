@@ -37,9 +37,8 @@ project "glslang"
         "../",
         "Include",
 
-        "../External",
-        "../External/spirv-tools/include",
-        "../External/spirv-tools/external/spirv-headers/include",
+        "../spirv-tools/include",
+        "../spirv-tools/external/spirv-headers/include",
     }
 
     links{

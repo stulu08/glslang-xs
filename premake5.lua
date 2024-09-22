@@ -36,5 +36,5 @@ workspace "glslang"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 include "glslang"
-include "External/spirv-tools/SPIRV-Tools-static"
-include "External/spirv-tools/SPIRV-Tools-opt"
+include "spirv-tools/SPIRV-Tools-static"
+include "spirv-tools/SPIRV-Tools-opt"
