@@ -7,6 +7,14 @@ project "glslang"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "pch.h"
+    pchsource "MachineIndependent/pch.cpp"
+
+    forceincludes  
+    {
+        "pch.h"
+    }
+
     defines
     {
         "_CRT_SECURE_NO_WARNINGS",
@@ -24,6 +32,8 @@ project "glslang"
         "Include/**.h",
         "MachineIndependent/**.h",
         "MachineIndependent/**.cpp",
+        "ResourceLimits/**.h",
+        "ResourceLimits/**.cpp",
         "Public/**.h",
         "../SPIRV/**.cpp",
         "../SPIRV/**.h",

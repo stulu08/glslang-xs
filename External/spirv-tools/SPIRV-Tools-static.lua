@@ -20,6 +20,12 @@ project "SPIRV-Tools-static"
     {
         "include/*.h",
         "source/*.cpp",
+
+        "include/util/**.h",
+        "source/util/**.cpp",
+
+        "include/val/**.h",
+        "source/val/**.cpp",
     }
 
     includedirs
